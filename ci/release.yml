@@ -1,0 +1,19 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: r2dbc/r2dbc-bom
+
+inputs:
+- name: r2dbc-bom
+
+outputs:
+- name: r2dbc-bom-artifactory
+
+caches:
+- path: maven
+
+run:
+  path: r2dbc-bom/ci/release.sh

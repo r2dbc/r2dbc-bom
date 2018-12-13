@@ -1,0 +1,104 @@
+<!--
+  ~ Copyright 2017-2018 the original author or authors.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+                http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.r2dbc</groupId>
+    <artifactId>r2dbc-bom</artifactId>
+    <version>1.0.0.BUILD-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Reactive Relational Database Connectivity - Bill of Materials</name>
+    <url>https://github.com/r2dbc/r2dbc-bom</url>
+
+    <properties>
+        <r2dbc-client.version>${project.version}</r2dbc-client.version>
+        <r2dbc-h2.version>${project.version}</r2dbc-h2.version>
+        <r2dbc-mssql.version>${project.version}</r2dbc-mssql.version>
+        <r2dbc-postgresql.version>${project.version}</r2dbc-postgresql.version>
+        <r2dbc-spi.version>${project.version}</r2dbc-spi.version>
+
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.r2dbc</groupId>
+                <artifactId>r2dbc-client</artifactId>
+                <version>${r2dbc-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.r2dbc</groupId>
+                <artifactId>r2dbc-h2</artifactId>
+                <version>${r2dbc-h2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.r2dbc</groupId>
+                <artifactId>r2dbc-mssql</artifactId>
+                <version>${r2dbc-mssql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.r2dbc</groupId>
+                <artifactId>r2dbc-postgresql</artifactId>
+                <version>${r2dbc-postgresql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.r2dbc</groupId>
+                <artifactId>r2dbc-spi</artifactId>
+                <version>${r2dbc-spi.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</project>
