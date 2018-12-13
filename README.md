@@ -1,21 +1,24 @@
-# Reactive Relational Database Connectivity PostgreSQL Implementation
+# Reactive Relational Database Connectivity Bill of Materials
 
-This project contains the [PostgreSQL][p] implementation of the [R2DBC SPI][r].  This implementation is not inteded to be used directly, but rather to be used as the backing implementation for a humane client library to delegate to
+This project contains the Bill of Materials for [R2DBC][r].
 
-[p]: https://www.postgresql.org
-[r]: https://github.com/r2dbc/r2dbc-spi
-
-**THIS IS ONLY AN EXPERIMENT AND NOT SUPPORTED SOFTWARE**
+[r]: https://r2dbc.io
 
 ## Maven
 Both milestone and snapshot artifacts (library, source, and javadoc) can be found in Maven repositories.
 
 ```xml
-<dependency>
-  <groupId>io.r2dbc</groupId>
-  <artifactId>r2dbc-postgresql</artifactId>
-  <version>1.0.0.M5</version>
-</dependency>
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>io.r2dbc</groupId>
+      <artifactId>r2dbc-bom</artifactId>
+      <version>1.0.0.BUILD-SNAPSHOT</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
 ```
 
 Artifacts can be found at the following repositories.
