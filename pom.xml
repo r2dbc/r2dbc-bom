@@ -35,6 +35,7 @@
         <r2dbc-h2.version>${project.version}</r2dbc-h2.version>
         <r2dbc-mssql.version>${project.version}</r2dbc-mssql.version>
         <r2dbc-postgresql.version>${project.version}</r2dbc-postgresql.version>
+        <r2dbc-proxy.version>${project.version}</r2dbc-proxy.version>
         <r2dbc-spi.version>${project.version}</r2dbc-spi.version>
 
         <java.version>1.8</java.version>
@@ -63,6 +64,11 @@
                 <groupId>io.r2dbc</groupId>
                 <artifactId>r2dbc-postgresql</artifactId>
                 <version>${r2dbc-postgresql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.r2dbc</groupId>
+                <artifactId>r2dbc-proxy</artifactId>
+                <version>${r2dbc-proxy.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.r2dbc</groupId>
