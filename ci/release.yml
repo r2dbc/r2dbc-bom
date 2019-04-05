@@ -2,9 +2,10 @@
 platform: linux
 
 image_resource:
-  type: docker-image
+  type: registry-image
   source:
-    repository: r2dbc/r2dbc-bom
+    repository: openjdk
+    tag: 8-jdk
 
 inputs:
 - name: r2dbc-bom

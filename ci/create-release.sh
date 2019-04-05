@@ -1,6 +1,6 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-set -e -u
+set -euo pipefail
 
 RELEASE=$1
 SNAPSHOT=$2
@@ -9,14 +9,12 @@ SNAPSHOT=$2
 git add .
 git commit --message "Subproject Updates"
 
-git branch -f release
-git checkout release
 ./mvnw versions:set -DnewVersion=$RELEASE -DgenerateBackupPoms=false
 git add .
-git commit --message "$RELEASE Release"
-git tag -s $RELEASE -m "$RELEASE"
+git commit --message "v$RELEASE Release"
+git tag -s v$RELEASE -m "v$RELEASE"
 
-git master
+git reset --hard HEAD^1
 ./mvnw versions:set -DnewVersion=$SNAPSHOT -DgenerateBackupPoms=false
 git add .
-git commit --message "$SNAPSHOT Development"
+git commit --message "v$SNAPSHOT Development"
