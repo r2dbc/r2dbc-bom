@@ -11,10 +11,10 @@ git commit --message "Subproject Updates"
 
 ./mvnw versions:set -DnewVersion=$RELEASE -DgenerateBackupPoms=false
 git add .
-git commit --message "v$RELEASE Release"
-git tag -s v$RELEASE -m "v$RELEASE"
+git commit --message "$RELEASE Release"
+git tag -s $RELEASE -m "$RELEASE"
 
-git reset --hard HEAD^1
+git reset --hard HEAD~2
 ./mvnw versions:set -DnewVersion=$SNAPSHOT -DgenerateBackupPoms=false
 git add .
-git commit --message "v$SNAPSHOT Development"
+git commit --message "$SNAPSHOT Development"
