@@ -31,7 +31,7 @@
     <url>https://github.com/r2dbc/r2dbc-bom</url>
 
     <properties>
-        <r2dbc-module.version>0.8.0.BUILD-SNAPSHOT</r2dbc-module.version>
+        <r2dbc-module.version>0.8.0.RC2</r2dbc-module.version>
         
         <r2dbc-client.version>${r2dbc-module.version}</r2dbc-client.version>
         <r2dbc-h2.version>${r2dbc-module.version}</r2dbc-h2.version>
