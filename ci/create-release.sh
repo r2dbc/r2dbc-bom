@@ -4,8 +4,9 @@ set -euo pipefail
 
 RELEASE=$1
 SNAPSHOT=$2
+RELEASE_MODULE=$3
 
-./mvnw versions:update-properties -DgenerateBackupPoms=false
+./mvnw versions:set-property -Dproperty=r2dbc-module.version -DnewVersion=$RELEASE_MODULE -DgenerateBackupPoms=false
 git add .
 git commit --message "Subproject Updates"
 
