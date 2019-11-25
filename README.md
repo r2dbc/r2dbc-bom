@@ -5,7 +5,8 @@ This project contains the Bill of Materials for [R2DBC][r].
 [r]: https://r2dbc.io
 
 ## Maven
-Both milestone and snapshot artifacts (library, source, and javadoc) can be found in Maven repositories.
+
+Usage in Maven
 
 ```xml
 <dependencyManagement>
@@ -13,37 +14,31 @@ Both milestone and snapshot artifacts (library, source, and javadoc) can be foun
     <dependency>
       <groupId>io.r2dbc</groupId>
       <artifactId>r2dbc-bom</artifactId>
-      <version>1.0.0.BUILD-SNAPSHOT</version>
+      <version>Arabba-RELEASE</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
   </dependencies>
 </dependencyManagement>
+
+<dependencies>
+  <dependency>
+    <groupId>io.r2dbc</groupId>
+    <artifactId>r2dbc-spi</artifactId>
+  </dependency>
+</dependencies>
 ```
 
-Artifacts can be found at the following repositories.
+## Gradle
 
-### Repositories
-```xml
-<repository>
-    <id>spring-snapshots</id>
-    <name>Spring Snapshots</name>
-    <url>https://repo.spring.io/snapshot</url>
-    <snapshots>
-        <enabled>true</enabled>
-    </snapshots>
-</repository>
-```
+Usage in Gradle
 
-```xml
-<repository>
-    <id>spring-milestones</id>
-    <name>Spring Milestones</name>
-    <url>https://repo.spring.io/milestone</url>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-</repository>
+```groovy
+dependencies {
+  implementation platform("io.r2dbc:r2dbc-bom:Arabba-RELEASE")
+
+  implementation("io.r2dbc:r2dbc-spi") 
+}
 ```
 
 ## License
