@@ -28,6 +28,7 @@
     <packaging>pom</packaging>
 
     <name>Reactive Relational Database Connectivity - Bill of Materials</name>
+    <description>Dependency Management for R2DBC Drivers</description>
     <url>https://github.com/r2dbc/r2dbc-bom</url>
 
     <properties>
@@ -40,10 +41,28 @@
         <r2dbc-proxy.version>${r2dbc-module.version}</r2dbc-proxy.version>
         <r2dbc-spi.version>${r2dbc-module.version}</r2dbc-spi.version>
 
-        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/r2dbc/r2dbc-bom</connection>
+        <url>https://github.com/r2dbc/r2dbc-bom</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>R2DBC Working Group</name>
+        </developer>
+    </developers>
 
     <dependencyManagement>
         <dependencies>
