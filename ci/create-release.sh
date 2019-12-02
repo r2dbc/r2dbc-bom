@@ -10,7 +10,8 @@ git add .
 git commit --message "$RELEASE Release"
 git tag -s $RELEASE -m "$RELEASE"
 
-git reset --hard HEAD~2
+git reset --hard HEAD~1
+
 ./mvnw versions:set -DnewVersion=$SNAPSHOT -DgenerateBackupPoms=false
 git add .
 git commit --message "$SNAPSHOT Development"
