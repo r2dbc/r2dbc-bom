@@ -66,7 +66,7 @@ pipeline {
 
 					// Capture build output...
 					OUTPUT = sh(
-							script: "PROFILE=ci,${RELEASE_TYPE} ci/build.sh",
+							script: "PROFILE=${RELEASE_TYPE} ci/build.sh",
 							returnStdout: true
 					).trim()
 
