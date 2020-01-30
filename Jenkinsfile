@@ -27,8 +27,8 @@ pipeline {
 		stage('Deploy to Artifactory') {
 			when {
 				anyOf {
-					branch '0.8.x'
-					branch 'release-0.x'
+					branch 'master'
+					branch 'release'
 				}
 			}
 			agent {
@@ -88,7 +88,7 @@ pipeline {
 
 		stage('Promote to Bintray') {
 			when {
-				branch 'release-0.x'
+				branch 'release'
 			}
 			agent {
 				docker {
@@ -126,7 +126,7 @@ pipeline {
 
 		stage('Sync to Maven Central') {
 			when {
-				branch 'release-0.x'
+				branch 'release'
 			}
 			agent {
 				docker {
