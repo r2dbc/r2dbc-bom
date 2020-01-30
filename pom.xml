@@ -32,13 +32,13 @@
     <url>https://github.com/r2dbc/r2dbc-bom</url>
 
     <properties>
-        <r2dbc-h2.version>0.8.1.RELEASE</r2dbc-h2.version>
-        <r2dbc-mssql.version>0.8.0.RELEASE</r2dbc-mssql.version>
+        <r2dbc-h2.version>0.8.2.BUILD-SNAPSHOT</r2dbc-h2.version>
+        <r2dbc-mssql.version>0.8.1.BUILD-SNAPSHOT</r2dbc-mssql.version>
         <r2dbc-mysql.version>0.8.0.RELEASE</r2dbc-mysql.version>
-        <r2dbc-postgresql.version>0.8.0.RELEASE</r2dbc-postgresql.version>
+        <r2dbc-postgresql.version>0.8.1.BUILD-SNAPSHOT</r2dbc-postgresql.version>
         <r2dbc-pool.version>0.8.0.RELEASE</r2dbc-pool.version>
-        <r2dbc-proxy.version>0.8.0.RELEASE</r2dbc-proxy.version>
-        <r2dbc-spi.version>0.8.0.RELEASE</r2dbc-spi.version>
+        <r2dbc-proxy.version>0.8.1.BUILD-SNAPSHOT</r2dbc-proxy.version>
+        <r2dbc-spi.version>0.8.1.BUILD-SNAPSHOT</r2dbc-spi.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
