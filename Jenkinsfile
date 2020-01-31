@@ -92,7 +92,7 @@ pipeline {
 			}
 			agent {
 				docker {
-					image 'adoptopenjdk/openjdk8:latest'
+					image 'springci/spring-hateoas-openjdk8-with-graphviz-and-jq:latest'
 					args '-v $HOME/.m2:/tmp/jenkins-home/.m2'
 				}
 			}
@@ -130,7 +130,7 @@ pipeline {
 			}
 			agent {
 				docker {
-					image 'adoptopenjdk/openjdk8:latest'
+					image 'springci/spring-hateoas-openjdk8-with-graphviz-and-jq:latest'
 					args '-v $HOME/.m2:/tmp/jenkins-home/.m2'
 				}
 			}
