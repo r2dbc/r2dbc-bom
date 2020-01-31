@@ -60,7 +60,7 @@ pipeline {
 
 					if (PROJECT_VERSION.endsWith('SNAPSHOT')) {
 						RELEASE_TYPE = 'snapshot'
-					} else if (PROJECT_VERSION.endsWith('RELEASE')) {
+					} else if (PROJECT_VERSION.endsWith('RELEASE') || PROJECT_VERSION.contains("-SR")) {
 						RELEASE_TYPE = 'release'
 					}
 
@@ -114,7 +114,7 @@ pipeline {
 							returnStdout: true
 					).trim()
 
-					if (PROJECT_VERSION.endsWith('RELEASE')) {
+					if (PROJECT_VERSION.endsWith('RELEASE') || PROJECT_VERSION.contains("-SR")) {
 						unstash name: 'build_info'
 						sh "ci/promote-to-bintray.sh"
 					} else {
@@ -153,7 +153,7 @@ pipeline {
 							returnStdout: true
 					).trim()
 
-					if (PROJECT_VERSION.endsWith('RELEASE')) {
+					if (PROJECT_VERSION.endsWith('RELEASE') || PROJECT_VERSION.contains("-SR")) {
 						unstash name: 'build_info'
 						sh "ci/sync-to-maven-central.sh"
 					} else {
