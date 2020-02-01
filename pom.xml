@@ -24,7 +24,7 @@
 
     <groupId>io.r2dbc</groupId>
     <artifactId>r2dbc-bom</artifactId>
-    <version>Arabba-BUILD-SNAPSHOT</version>
+    <version>Arabba-SR2</version>
     <packaging>pom</packaging>
 
     <name>Reactive Relational Database Connectivity - Bill of Materials</name>
