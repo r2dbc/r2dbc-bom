@@ -106,11 +106,6 @@
                 <artifactId>cloud-spanner-r2dbc</artifactId>
                 <version>${r2dbc-cloud-spanner.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.google.cloud</groupId>
-                <artifactId>cloud-spanner-spring-data-r2dbc</artifactId>
-                <version>${r2dbc-cloud-spanner.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
