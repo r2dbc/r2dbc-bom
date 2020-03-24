@@ -39,6 +39,7 @@
         <r2dbc-pool.version>0.9.0.BUILD-SNAPSHOT</r2dbc-pool.version>
         <r2dbc-proxy.version>0.9.0.BUILD-SNAPSHOT</r2dbc-proxy.version>
         <r2dbc-spi.version>0.9.0.BUILD-SNAPSHOT</r2dbc-spi.version>
+        <r2dbc-cloud-spanner.version>0.2.0</r2dbc-cloud-spanner.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -99,6 +100,11 @@
                 <groupId>io.r2dbc</groupId>
                 <artifactId>r2dbc-spi</artifactId>
                 <version>${r2dbc-spi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.cloud</groupId>
+                <artifactId>cloud-spanner-r2dbc</artifactId>
+                <version>${r2dbc-cloud-spanner.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
