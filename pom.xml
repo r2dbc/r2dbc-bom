@@ -35,7 +35,7 @@
         <r2dbc-cloud-spanner.version>0.2.0</r2dbc-cloud-spanner.version>
         <r2dbc-h2.version>0.8.4.BUILD-SNAPSHOT</r2dbc-h2.version>
         <r2dbc-mssql.version>0.8.3.BUILD-SNAPSHOT</r2dbc-mssql.version>
-        <r2dbc-mysql.version>0.8.2.BUILD-SNAPSHOT</r2dbc-mysql.version>
+        <r2dbc-mysql.version>0.8.1.RELEASE</r2dbc-mysql.version>
         <r2dbc-postgresql.version>0.8.3.BUILD-SNAPSHOT</r2dbc-postgresql.version>
         <r2dbc-pool.version>0.8.3.BUILD-SNAPSHOT</r2dbc-pool.version>
         <r2dbc-proxy.version>0.8.3.BUILD-SNAPSHOT</r2dbc-proxy.version>
