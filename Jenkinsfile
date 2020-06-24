@@ -27,7 +27,7 @@ pipeline {
         stage('Deploy') {
             when {
                 anyOf {
-                    branch 'master'
+                    branch 'main'
                     branch 'release'
                 }
                 not { triggeredBy 'UpstreamCause' }
