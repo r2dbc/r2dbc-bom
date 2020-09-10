@@ -34,6 +34,7 @@
     <properties>
         <r2dbc-cloud-spanner.version>0.2.0</r2dbc-cloud-spanner.version>
         <r2dbc-h2.version>0.8.5.BUILD-SNAPSHOT</r2dbc-h2.version>
+        <r2dbc-mariadb.version>0.8.3-beta1</r2dbc-mariadb.version>
         <r2dbc-mssql.version>0.8.5.BUILD-SNAPSHOT</r2dbc-mssql.version>
         <r2dbc-mysql.version>0.8.2.RELEASE</r2dbc-mysql.version>
         <r2dbc-postgresql.version>0.8.5.BUILD-SNAPSHOT</r2dbc-postgresql.version>
@@ -75,6 +76,11 @@
                 <groupId>io.r2dbc</groupId>
                 <artifactId>r2dbc-h2</artifactId>
                 <version>${r2dbc-h2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mariadb</groupId>
+                <artifactId>r2dbc-mariadb</artifactId>
+                <version>${r2dbc-mariadb.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.r2dbc</groupId>
