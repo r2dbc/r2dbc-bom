@@ -1,4 +1,4 @@
-# Reactive Relational Database Connectivity Bill of Materials [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.r2dbc/r2dbc-bom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.r2dbc/r2dbc-bom)
+# Reactive Relational Database Connectivity Bill of Materials [![Java CI with Maven](https://github.com/r2dbc/r2dbc-bom/workflows/Java%20CI%20with%20Maven/badge.svg?branch=0.8.x)](https://github.com/r2dbc/r2dbc-bom/actions?query=workflow%3A%22Java+CI+with+Maven%22+branch%3A0.8.x) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.r2dbc/r2dbc-bom/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.r2dbc/r2dbc-bom)
 
 This project contains the Bill of Materials for [R2DBC][r].
 
