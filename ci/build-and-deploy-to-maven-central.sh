@@ -4,13 +4,7 @@ set -euo pipefail
 
 VERSION=$(./mvnw org.apache.maven.plugins:maven-help-plugin:2.1.1:evaluate -Dexpression=project.version -o | grep -v INFO)
 
-if [[ $VERSION =~ [^.*-SNAPSHOT$] ]] ; then
-
-  echo "Cannot deploy a snapshot: $VERSION"
-  exit 1
-fi
-
-if [[ $VERSION =~ [^(\d+\.)+(RC(\d+)|M(\d+)|RELEASE)$] ]] ; then
+if [[ $VERSION =~ [^(\d+\.)+(SR(\d+)|RELEASE)$] ]] ; then
 
   #
   # Prepare GPG Key is expected to be in base64
