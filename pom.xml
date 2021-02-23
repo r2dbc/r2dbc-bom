@@ -93,7 +93,7 @@
                 <version>${r2dbc-mysql.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.r2dbc</groupId>
+                <groupId>org.postgresql</groupId>
                 <artifactId>r2dbc-postgresql</artifactId>
                 <version>${r2dbc-postgresql.version}</version>
             </dependency>
