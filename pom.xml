@@ -37,6 +37,7 @@
         <r2dbc-mariadb.version>1.0.0</r2dbc-mariadb.version>
         <r2dbc-mssql.version>0.8.6.BUILD-SNAPSHOT</r2dbc-mssql.version>
         <r2dbc-mysql.version>0.8.2.RELEASE</r2dbc-mysql.version>
+        <r2dbc-oracle.version>0.1.0</r2dbc-oracle.version>
         <r2dbc-postgresql.version>0.8.8.BUILD-SNAPSHOT</r2dbc-postgresql.version>
         <r2dbc-pool.version>0.8.7.BUILD-SNAPSHOT</r2dbc-pool.version>
         <r2dbc-proxy.version>0.8.6.BUILD-SNAPSHOT</r2dbc-proxy.version>
@@ -71,6 +72,11 @@
                 <groupId>com.google.cloud</groupId>
                 <artifactId>cloud-spanner-r2dbc</artifactId>
                 <version>${r2dbc-cloud-spanner.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.oracle.database.r2dbc</groupId>
+                <artifactId>oracle-r2dbc</artifactId>
+                <version>${r2dbc-oracle.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.r2dbc</groupId>
