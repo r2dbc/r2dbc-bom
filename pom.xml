@@ -32,7 +32,7 @@
     <url>https://github.com/r2dbc/r2dbc-bom</url>
 
     <properties>
-        <r2dbc-cloud-spanner.version>0.5.0</r2dbc-cloud-spanner.version>
+        <r2dbc-cloud-spanner.version>0.6.0</r2dbc-cloud-spanner.version>
         <r2dbc-h2.version>0.8.5.BUILD-SNAPSHOT</r2dbc-h2.version>
         <r2dbc-mariadb.version>1.0.1</r2dbc-mariadb.version>
         <r2dbc-mssql.version>0.8.7.BUILD-SNAPSHOT</r2dbc-mssql.version>
