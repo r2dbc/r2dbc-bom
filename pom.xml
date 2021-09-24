@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright 2017-2018 the original author or authors.
+  ~ Copyright 2017-2021 the original author or authors.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@
 
     <groupId>io.r2dbc</groupId>
     <artifactId>r2dbc-bom</artifactId>
-    <version>Arabba-BUILD-SNAPSHOT</version>
+    <version>Arabba-SR11</version>
     <packaging>pom</packaging>
 
     <name>Reactive Relational Database Connectivity - Bill of Materials</name>
@@ -33,15 +33,15 @@
 
     <properties>
         <r2dbc-cloud-spanner.version>0.6.0</r2dbc-cloud-spanner.version>
-        <r2dbc-h2.version>0.8.5.BUILD-SNAPSHOT</r2dbc-h2.version>
-        <r2dbc-mariadb.version>1.0.1</r2dbc-mariadb.version>
-        <r2dbc-mssql.version>0.8.7.BUILD-SNAPSHOT</r2dbc-mssql.version>
-        <r2dbc-mysql.version>0.8.3.BUILD-SNAPSHOT</r2dbc-mysql.version>
+        <r2dbc-h2.version>0.8.4.RELEASE</r2dbc-h2.version>
+        <r2dbc-mariadb.version>1.0.2</r2dbc-mariadb.version>
+        <r2dbc-mssql.version>0.8.7.RELEASE</r2dbc-mssql.version>
+        <r2dbc-mysql.version>0.8.2.RELEASE</r2dbc-mysql.version>
         <r2dbc-oracle.version>0.1.0</r2dbc-oracle.version>
-        <r2dbc-postgresql.version>0.8.9.BUILD-SNAPSHOT</r2dbc-postgresql.version>
-        <r2dbc-pool.version>0.8.8.BUILD-SNAPSHOT</r2dbc-pool.version>
-        <r2dbc-proxy.version>0.8.7.BUILD-SNAPSHOT</r2dbc-proxy.version>
-        <r2dbc-spi.version>0.8.6.BUILD-SNAPSHOT</r2dbc-spi.version>
+        <r2dbc-postgresql.version>0.8.10.RELEASE</r2dbc-postgresql.version>
+        <r2dbc-pool.version>0.8.7.RELEASE</r2dbc-pool.version>
+        <r2dbc-proxy.version>0.8.8.RELEASE</r2dbc-proxy.version>
+        <r2dbc-spi.version>0.8.6.RELEASE</r2dbc-spi.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
