@@ -24,7 +24,7 @@
 
     <groupId>io.r2dbc</groupId>
     <artifactId>r2dbc-bom</artifactId>
-    <version>Arabba-BUILD-SNAPSHOT</version>
+    <version>Arabba-SR12</version>
     <packaging>pom</packaging>
 
     <name>Reactive Relational Database Connectivity - Bill of Materials</name>
@@ -32,14 +32,14 @@
     <url>https://github.com/r2dbc/r2dbc-bom</url>
 
     <properties>
-        <r2dbc-cloud-spanner.version>0.6.0</r2dbc-cloud-spanner.version>
-        <r2dbc-h2.version>0.8.4.RELEASE</r2dbc-h2.version>
-        <r2dbc-mariadb.version>1.0.2</r2dbc-mariadb.version>
-        <r2dbc-mssql.version>0.8.7.RELEASE</r2dbc-mssql.version>
+        <r2dbc-cloud-spanner.version>1.1.0</r2dbc-cloud-spanner.version>
+        <r2dbc-h2.version>0.8.5.RELEASE</r2dbc-h2.version>
+        <r2dbc-mariadb.version>1.0.3</r2dbc-mariadb.version>
+        <r2dbc-mssql.version>0.8.8.RELEASE</r2dbc-mssql.version>
         <r2dbc-mysql.version>0.8.2.RELEASE</r2dbc-mysql.version>
         <r2dbc-oracle.version>0.1.0</r2dbc-oracle.version>
-        <r2dbc-postgresql.version>0.8.10.RELEASE</r2dbc-postgresql.version>
-        <r2dbc-pool.version>0.8.7.RELEASE</r2dbc-pool.version>
+        <r2dbc-postgresql.version>0.8.11.RELEASE</r2dbc-postgresql.version>
+        <r2dbc-pool.version>0.8.8.RELEASE</r2dbc-pool.version>
         <r2dbc-proxy.version>0.8.8.RELEASE</r2dbc-proxy.version>
         <r2dbc-spi.version>0.8.6.RELEASE</r2dbc-spi.version>
 
@@ -131,7 +131,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0-M3</version>
+                <version>3.0.0</version>
                 <executions>
                     <execution>
                         <id>enforce-no-snapshots</id>
@@ -159,7 +159,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
-                <version>1.2.4</version>
+                <version>1.2.7</version>
                 <executions>
                     <execution>
                         <id>flatten</id>
@@ -212,7 +212,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-gpg-plugin</artifactId>
-                            <version>1.6</version>
+                            <version>3.0.1</version>
                             <executions>
                                 <execution>
                                     <id>sign-artifacts</id>
